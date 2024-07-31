@@ -1,0 +1,1669 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" 
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384- B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" 
+      crossorigin="anonymous">
+    <!-- ********************************************* -->
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        main{
+        height: 100%;
+        width: 100%;
+        /* background-color: blueviolet; */
+       
+        }
+        nav{
+            height: 150px;
+            width: 100%;
+            background-color:aliceblue;
+        }
+        .Navbar1{
+            height: 50px;
+            width: 100%;
+            /* background-color: aqua; */
+            display: flex;
+            padding: 3;
+            
+        }
+        .section1 h2 i{
+            color: rgb(250, 116, 114);
+            font-size: 30px;
+            
+           
+        }
+        .section1{
+            height: 100%;
+            width: 30%;
+            /* background-color: aquamarine; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        
+        }
+        .section2{
+            height: 100%;
+            width: 30%;
+            /* background-color: pink; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        .section3{
+            height: 100%;
+            width: 40%;
+            /* background-color: brown; */
+            display: flex;
+        }
+        .section3 ul{
+            
+            margin-left: 250px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .section3 ul li{
+            list-style-type: none;
+            
+            
+        }
+        .section3 ul li i{
+            text-decoration: none;
+            color: black;
+            border: solid 2px rgb(38, 30, 28);
+            font-size: 20px;
+            background-color: gainsboro;
+            padding: 8px;
+            border-radius: 20px;
+            
+            margin-left: 30px; 
+           
+        }
+        .section3 ul li i:hover{
+            background-color: rgb(235, 69, 13);
+            transform: scale(0.9);
+        }
+        .section3 ul li:hover{
+            transform: scale(0.9);   
+        }
+
+        .Navbar2{
+            height: 100px;
+            width: 100%;
+            /* background-color: blue; */
+            display: flex;
+            position: absolute;
+            /* position: fixed; */
+            
+        }
+        .section-01{
+            height: 100%;
+            width: 40%;
+            
+            /* background-color: chartreuse; */
+
+        }
+        .section-01 h1{
+            color: black;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 30px;
+            margin-left: 120px;
+            font-variant: small-caps;
+            font-size: 35px;
+        }
+        .section-02{
+            height: 100%;
+            width: 40%;
+            /* background-color: red; */
+            
+
+        }
+        .section-02 ul{
+        list-style-type: none;
+            
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+        .section-02 ul li{
+            text-decoration: none;
+        }
+        .section-02 ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 22px;
+        font-weight: bold;
+        font-variant: small-caps;
+        }
+        .section-02 ul li a:hover{
+            color: rgb(235, 69, 13);
+
+        }
+
+        .section-03{
+            height: 100%;
+            width: 20%;
+            /* background-color: orange; */
+
+        }
+        .section-03 button{
+            padding: 12px 70px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: medium;
+            margin-top: 30px;
+            margin-left: 20px;
+        }
+        .section-03 button:hover{
+       
+        transform: scale(1.1);
+        color: rgb(237, 65, 13);
+        }
+        
+
+    /* *********************************************************** */
+        .Image{
+            height: 900px;
+            width: 100%;
+            background-size: 100% 100%;
+            background-image: url(/villa-Agency-Template_Project/Media/First.png);
+        }
+        .Title{
+            height: 700px;
+            width: 50%;
+            margin-left: 100px;
+            /* background-color: aqua; */
+            padding: 80px;
+          
+        }
+        .Title button{
+            padding: 10px 60px;
+            font-size: large;
+            font-weight: bold;
+            margin-top: 180px;
+            /* margin-left: 90px; */
+        }
+        .Title h1{
+            color: white;
+            font-size: 70px;
+            line-height: 1.2;
+            text-shadow: 4px 2px 4px black;
+        }
+        .sec-3{
+            height: 700px;
+            width: 100%;
+            background-color: whitesmoke;
+            padding: 60px;
+            display: flex;
+        }
+        .box1{
+            height: 100%;
+            width: 40%;
+            /* background-color: orange; */
+        }
+        .box1 img{
+            height:100% ;
+            width: 70%;
+            margin-left: 100px;
+        }
+        .box2{
+            height: 100%;
+            width: 40%;
+            /* background-color: rgb(190, 187, 182); */
+            
+        }
+        .box-2-01{
+            height: 50%;
+            width: 90%;
+            /* background-color: aqua; */
+            padding: 30px;
+        }
+        .box-2-01 h3{
+           margin-left: 30px;
+        }
+        .box-2-01 h1{
+            color: black;
+            font-size: 40px;
+            font-weight: bold;
+            text-shadow: 1px 2px 2px red;
+            line-height: 1.4;
+        }
+
+        .box-2-02{
+            height: 50%;
+            width: 90%;
+            background-color: pink;
+            border-radius: 20px;
+            padding: 10px 50px;
+            line-height: 1.7;
+        }
+        .box3{
+            height: 100%;
+            width: 20%;
+            /* background-color: green; */
+            border-radius: 10px;
+            box-shadow: 2px 1px 3px 5px gainsboro;
+        }
+        .box3-01{
+            height: 140px;
+            width: 100%;
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .img{
+            height: 100%;
+            width: 40%;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .value{
+            height: 100%;
+            width: 60%;
+            /* background-color: rgb(226, 43, 43); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        
+        .box3-02{
+            height: 140px;
+            width: 100%;
+            /* background-color: rgb(24, 244, 20); */
+            display: flex;
+
+        }
+        .img{
+            height: 100%;
+            width: 40%;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .value{
+            height: 100%;
+            width: 60%;
+            /* background-color: rgb(226, 43, 43); */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box3-03{
+            height: 140px;
+            width: 100%;
+            /* background-color: rgb(149, 15, 193); */
+            display: flex;
+        }
+        .img{
+            height: 100%;
+            width: 40%;
+            /* background-color: pink; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .value{
+            height: 100%;
+            width: 60%;
+            /* background-color: rgb(211, 140, 140); */
+            
+        }
+        .box3-04{
+            height: 140px;
+            width: 100%;
+            /* background-color: rgb(46, 52, 52); */
+            display: flex;
+           
+        }
+        .img{
+            height: 100%;
+            width: 40%;
+            /* background-color: blue; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .value{
+            height: 100%;
+            width: 60%;
+            /* background-color: rgb(226, 43, 43); */
+            
+            
+        }
+        /* ***************************************************** */
+        .Sec-4{
+            height: 800px;
+            width: 100%;
+            /* background-color: blue; */
+        }
+        .img-1{
+            height: 80%;
+            width: 100%;
+            /* background-color:whitesmoke; */
+            background-image: url(/villa-Agency-Template_Project/Media/best-image.avif);
+            background-size: 100% 100%;
+            background-color: hsla(0, 0%, 0%, 0.6);
+            
+        }
+        .First{
+            height: 300px;
+            width: 100%;
+            /* background-color: yellow; */
+            padding: 50px;
+            
+        }
+        .First h4{
+            color: orangered;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .First h1{
+            color: white;
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.3;
+            font-weight: bold;
+            font-size: 60px;
+            text-shadow: 1px 2px 1px rgb(235, 69, 13);
+        }
+        .Second{
+            height: 480px;
+            width: 80%;
+            /* background-color: pink; */
+            background-image: url(/villa-Agency-Template_Project/Media/video-frame.jpg);
+           margin-top: 10px;
+            margin-left: 150px;
+            border-radius: 20px;
+
+            
+        }
+        /* ********************************* */
+        .Sec-5{
+            height: 280px;
+            width: 100%;
+            /* background-color: deeppink; */
+            display: flex;
+            justify-content: space-around;
+            
+            padding: 20px 80px;
+        }
+        .box-Sec-5_1{
+            height: 50%;
+            width: 20%;
+            background-color: wheat;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+        .box-Sec-5_1 h1{
+            font-size: 60px;
+            padding: 50px;
+
+        }
+        .box-Sec-5_1 p{
+            font-size: 20px;
+            margin-left: 50px;
+        }
+        .box-Sec-5_2{
+            height: 50%;
+            width: 20%;
+            background-color: wheat;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .box-Sec-5_2 h1{
+            font-size: 60px;
+            padding: 50px;
+
+        }
+        .box-Sec-5_2 p{
+            font-size: 20px;
+            margin-left: 50px;
+        }
+        .box-Sec-5_3{
+            height: 50%;
+            width: 20%;
+            background-color: wheat;
+            border-radius: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .box-Sec-5_3 h1{
+            font-size: 60px;
+            padding: 50px;
+
+        }
+        .box-Sec-5_3 p{
+            margin-left: 50px;
+            font-size: 20px;
+        }
+        /* *************************************** */
+        .Sec-6{
+            height: 850px;
+            width: 100%;
+            background-color: rgb(240, 244, 244);
+        }
+        .First-Box{
+            height: 250px;
+            width: 100%;
+            /* background-color: blue; */
+            display: flex;
+            padding: 20px;
+        }
+        .First-Box-01{
+            height: 90%;
+            width: 40%;
+            /* background-color: brown; */
+            padding: 15px 80px;
+            border-radius: 20px;
+
+        }
+        .First-Box-01 h4{
+            font-size: 20px;
+            margin-left: 30px;
+        }
+        .First-Box-01 h1{
+            font-size: 40px;
+            text-shadow: 1px 2px 3px white;
+            margin-left: 30px;
+            line-height: 1.3;
+        }
+        .First-Box-02{
+            height: 90%;
+            width: 60%;
+            /* background-color: green; */
+            padding: 25px 100px;
+            border-radius: 20px;
+
+        }
+        .Nav{
+            height: 90px;
+            width: 100%;
+            /* background-color: chartreuse; */
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10px;
+            
+        }
+        .BTN-1{
+            height: 100%;
+            width: 30%;
+            /* background-color: blueviolet; */
+            margin-top: 10px;
+            
+            /* border-radius: 20px; */
+        }
+        .BTN-1 button:hover{
+            transform: scale(1.1);
+            background-color: coral;
+            
+        }
+            
+        
+        .BTN-2{
+            height: 100%;
+            width: 30%;
+            
+            /* background-color: palevioletred; */
+            /* border-radius: 20px; */
+            margin-top: 10px;
+        }
+        .BTN-2 button:hover{
+            transform: scale(1.1);
+            background-color: orangered;
+        }
+        .BTN-3{
+            height: 100%;
+            width: 30%;
+            /* background-color: yellow; */
+            /* border-radius: 20px; */
+            margin-top: 10px;
+        }
+        .BTN-3 button:hover{
+            transform: scale(1.1);
+            background-color: orangered;
+        }
+/* ************************************ */
+        .Second-Box{
+            height: 600px;
+            width: 100%;
+            /* background-color: orangered; */
+            display: flex;
+            padding: 10px;
+        }
+        .Second-Box-1{
+            height: 100%;
+            width: 25%;
+            /* background-color: plum; */
+            border-radius: 20px;
+            box-shadow: 3px 4px 4px 2px black;
+            margin-left: 30px;
+            padding:30px;
+            
+        }
+        .nav1{
+            height: 100px;
+            width: 100%;
+            /* background-color: sandybrown; */
+            margin-top: 8px;
+            display: flex;
+        }
+        .nav2{
+            height: 100px;
+            width: 100%;
+            /* background-color: mediumspringgreen; */
+            margin-top: 10px;
+            display: flex;
+        }
+        .nav3{
+            height: 100px;
+            width: 100%;
+            /* background-color: mediumblue; */
+            margin-top: 10px;
+            display: flex;
+        }
+        .nav4{
+            height: 100px;
+            width: 100%;
+            /* background-color: midnightblue; */
+            margin-top: 10px;
+            display: flex;
+        }
+        .nav5{
+            height: 100px;
+            width: 100%;
+            /* background-color: sienna; */
+            margin-top: 10px;
+            display: flex;
+        }
+
+
+        .Second-Box-2{
+            height: 100%;
+            width: 35%;
+            /* background-color: plum; */
+            background-image: url(/villa-Agency-Template_Project/Media/deal-01.jpg);
+            background-size: 100% 100%;
+            margin-left: 30px;
+        }
+        .Second-Box-3{
+            height: 100%;
+            width: 30%;
+            /* background-color: blueviolet; */
+            margin-left: 40px;
+            padding: 12px 50px;
+            line-height: 1.7;
+            font-size: 20px;
+        }
+        .Second-Box-3 button{
+            padding: 12px 70px;
+            background-color: black;
+            box-shadow: 2px 2px 3px white;
+            color: white;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: medium;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+        .Second-Box-3 button:hover{
+       
+        transform: scale(1.1);
+        color: rgb(237, 65, 13);
+        }
+
+    /* *************************************************** */
+        .Sec-7{
+            height: 1700px;
+            width: 100%;
+            /* background-color: deeppink; */
+        }
+        .Content-1{
+            height: 200px;
+            width: 100%;
+            /* background-color: aqua; */
+        }
+        .Content-1 h4{
+            font-size: 30px;
+            color: darkorange;
+            /* margin-top: 30px; */
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Content-1 h1{
+            color: azure;
+            color: black;
+            text-shadow: 2px 3px 3px rgb(235, 69, 13);
+            font-size: 50px;
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    /* ****************************************** */
+        .Content-2{
+            height: 700px;
+            width: 100%;
+            background-color: rgb(254, 250, 250);
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 40px;
+        }
+        .Image-1{
+            height: 100%;
+            width: 33%;
+            background-color: lightgray;
+           margin-left: 15px;
+           padding: 10px 30px;
+           border-radius: 20px;
+
+        }
+        .img-sec1{
+            height: 300px;
+            width: 100%;
+            /* background-color: aqua; */
+            background-image: url(/villa-Agency-Template_Project/Media/property-01.jpg);
+            background-size: 100% 100%;
+            border-radius: 30px;
+            
+        }
+        .img-sec2{
+            height: 350px;
+            width: 100%;
+            /* background-color: darkorchid; */
+        }
+        .img-sec2-Nav{
+            height: 100px;
+            width: 100%;
+            /* background-color: rgb(0, 38, 255); */
+            display: flex;
+            padding: 10px;
+        }
+        .Nav-Button{
+            height: 80px;
+            width: 50%;
+            /* background-color: rgb(60, 52, 52); */
+        }
+        .Nav-Button button:hover{
+            color: rgb(237, 65, 13);
+        }
+        .Value-1{
+            height: 80px;
+            width: 50%;
+            /* background-color: palevioletred; */
+            
+        }
+        
+        /* *************************** */
+        .Image-2{
+            height: 100%;
+            width: 33%;
+            background-color: lightgray;
+            margin-left: 15px;  
+           padding: 10px 30px;
+           border-radius: 20px;
+            
+
+        }
+        .Image-2-sec1{
+            height: 300px;
+            width: 100%;
+            /* background-color: aqua; */
+            background-image: url(/villa-Agency-Template_Project/Media/property-02.jpg);
+            background-size: 100% 100%;
+            border-radius: 30px;
+
+        }
+        .Image-2-sec2{
+            height: 350px;
+            width: 100%;
+            /* background-color: darkorchid; */
+        }
+        .Image-2-sec2-Nav{
+            height: 100px;
+            width: 100%;
+            /* background-color: rgb(0, 38, 255); */
+            display: flex;
+            padding: 10px;
+
+        }
+        .Image-2-Button{
+            height: 80px;
+            width: 50%;
+            /* background-color: rgb(60, 52, 52); */
+        }
+        .Image-2-Button button:hover{
+            color: rgb(237, 65, 13);
+        }
+        
+        .Image-2-Value-1{
+             height: 80px;
+            width: 50%;
+            /* background-color: palevioletred; */
+            
+
+        }
+        /* ********************** */
+        /* ******************* */
+        .Image-3{
+            height:100%;
+            width: 33%;
+            background-color: lightgray;
+            margin-left: 15px;
+            padding: 10px 30px;
+            border-radius: 20px;
+
+
+        }
+        .Image3-Sec1{
+            height: 300px;
+            width: 100%;
+            /* background-color: aqua; */
+            background-image: url(/villa-Agency-Template_Project/Media/property-03.jpg);
+            background-size: 100% 100%;
+            border-radius: 30px;
+
+        }
+        .img-sec2{
+            height: 350px;
+            width: 100%;
+            /* background-color: darkorchid; */
+        }
+        .img-sec2-Nav{
+            height: 100px;
+            width: 100%;
+            /* background-color: rgb(0, 38, 255); */
+            display: flex;
+            padding: 10px;
+        }
+        .Nav-Button{
+            height: 80px;
+            width: 50%;
+            /* background-color: rgb(60, 52, 52); */
+        }
+        .Nav-Button button:hover{
+            color: rgb(237, 65, 13);
+        }
+        .Value-1{
+            height: 80px;
+            width: 50%;
+            /* background-color: palevioletred; */
+            
+        }
+/* *********************************************************************************** */
+        /* *********************************** */
+        /* *************************** */
+    /* ***************************** */
+        .Content-3{
+            height: 700px;
+            width: 100%;
+            /* background-color: wheat; */
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 40px;
+        }
+        .Content-3-Img1{
+            height: 100%;
+            width: 33%;
+            background-color: lightgray;
+           margin-left: 15px;
+           padding: 10px 30px;
+           border-radius: 20px;
+        }
+        .Content-3-img-sec1{
+            height: 300px;
+            width: 100%;
+            /* background-color: aqua; */
+            background-image: url(/villa-Agency-Template_Project/Media/property-04.jpg);
+            background-size: 100% 100%;
+            border-radius: 30px;
+            
+        }
+        .img-sec2{
+            height: 350px;
+            width: 100%;
+            /* background-color: darkorchid; */
+        }
+        .img-sec2-Nav{
+            height: 100px;
+            width: 100%;
+            /* background-color: rgb(0, 38, 255); */
+            display: flex;
+            padding: 10px;
+        }
+        .Nav-Button{
+            height: 80px;
+            width: 50%;
+            /* background-color: rgb(60, 52, 52); */
+        }
+        .Nav-Button button:hover{
+            color: rgb(237, 65, 13);
+        }
+        .Value-1{
+            height: 80px;
+            width: 50%;
+            /* background-color: palevioletred; */
+            
+        }
+
+        /* ************************* */
+        /* ********************* */
+        .Content-3-Img2{
+            height: 100%;
+            width: 33%;
+            background-color: lightgray;
+            margin-left: 15px;  
+           padding: 10px 30px;
+           border-radius: 20px;
+
+        }
+        .Content-3-Image-2-sec1{
+            height: 300px;
+            width: 100%;
+            /* background-color: aqua; */
+            background-image: url(/villa-Agency-Template_Project/Media/property-05.jpg);
+            background-size: 100% 100%;
+            border-radius: 30px;
+
+        }
+        .Image-2-sec2{
+            height: 350px;
+            width: 100%;
+            /* background-color: darkorchid; */
+        }
+        .Image-2-sec2-Nav{
+            height: 100px;
+            width: 100%;
+            /* background-color: rgb(0, 38, 255); */
+            display: flex;
+            padding: 10px;
+
+        }
+        .Image-2-Button{
+            height: 80px;
+            width: 50%;
+            /* background-color: rgb(60, 52, 52); */
+        }
+        .Image-2-Button button:hover{
+            color: rgb(237, 65, 13);
+        }
+        
+        .Image-2-Value-1{
+             height: 80px;
+            width: 50%;
+            /* background-color: palevioletred; */
+            
+
+        }
+        /* ************************** */
+        /* ********************** */
+
+        .Content-3-Img3{
+            height:100%;
+            width: 33%;
+            background-color: lightgrey;
+            margin-left: 15px;
+            padding: 10px 30px;
+            border-radius: 20px;
+
+        }
+        .Content-3-Image3-Sec1{
+            height: 300px;
+            width: 100%;
+            /* background-color: aqua; */
+            background-image: url(/villa-Agency-Template_Project/Media/property-06.jpg);
+            background-size: 100% 100%;
+            border-radius: 30px;
+
+        }
+        .Image3-sec2{
+            height: 350px;
+            width: 100%;
+            /* background-color: darkorchid; */
+        }
+        .Image-3-sec2-Nav{
+            height: 100px;
+            width: 100%;
+            /* background-color: rgb(0, 38, 255); */
+            display: flex;
+            padding: 10px;
+
+        }
+        .Image-3-Button{
+            height: 80px;
+            width: 50%;
+            /* background-color: rgb(60, 52, 52); */
+            
+        }
+        .Image-3-Button button:hover{
+            color: rgb(237, 65, 13);
+        }
+        .Image-3-Value-1{
+             height: 80px;
+            width: 50%;
+            /* background-color: palevioletred; */
+        }
+        
+
+
+        /* **************************************************** */
+        /* **************************************************** */
+        /* **************************************************** */
+        .Sec-8{
+            height: 1000px;
+            width: 100%;
+            /* background-color: darkmagenta; */
+            
+        }
+        .Sec-8-Image{
+            height: 550px;
+            width: 100%;
+            background-color: aqua;
+            background-image: url(/villa-Agency-Template_Project/Media/2nd.jpg);
+            background-size: 100% 100%;
+        }
+        .nav-section{
+            height: 250px;
+            width: 100%;
+            /* background-color: brown; */
+        }
+        .nav-section h1{
+            
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Image-Sec{
+            height: 700px;
+            width: 100%;
+            /* background-color: chartreuse; */
+            display: flex;
+            padding: 10px 40px;
+        }
+        .Map-sec{
+            height: 100%;
+            width: 60%;
+            /* background-color: yellow; */
+            
+
+        }
+        .Map-sec-Img{
+            height: 450px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            padding: 5px;
+            box-shadow: 2px 3px 4px 3px rgb(200, 194, 194);
+        }
+        .Map-sec-Button{
+            height: 220px;
+            width: 100%;
+            /* background-color: aqua; */
+            display: flex;
+            
+            padding: 10px 50px;
+        }
+        .Btn-1{
+            height: 150px;
+            width: 50%;
+            /* background-color: brown; */
+            box-shadow: 2px 2px 4px 5px rgb(220, 212, 212);
+            padding: 30px;
+            margin-top: 30px;
+            display: flex;
+            border-radius: 30px;
+            /* margin-left: 10px; */
+
+        }
+        .Btn-1-img{
+            height: 100%;
+            width: 40%;
+            /* background-color: azure; */
+            padding: 30px;
+            
+        }
+        .Btn-1-Value{
+            height: 100%;
+            width: 60%;
+            /* background-color: cadetblue; */
+        }
+        .Btn-2{
+            height: 150px;
+            width: 50%;
+            /* background-color: darkorange; */
+            border-radius: 30px;
+            margin-left: 30px;
+            margin-top: 30px;
+            box-shadow: 2px 2px 4px 5px rgb(183, 165, 165);
+            padding: 30px;
+            display: flex;
+            
+        }
+        .Btn-2-img{
+            height: 100%;
+            width: 40%;
+            /* background-color: azure; */
+            padding: 30px;
+        }
+        .Btn-2-Value{
+            height: 100%;
+            width: 60%;
+            /* background-color: cadetblue; */
+        }
+        /* ******************** */
+        .Form-sec{
+            height: 100%;
+            width: 40%;
+            /* background-color: violet; */
+            margin-left: 90px;
+            padding: 10px;
+        }
+        .Login-Form{
+            height: 100%;
+            width: 80%;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 3px 2px 3px 5px rgb(140, 133, 133);
+            border-radius: 15px;
+            
+
+
+        }
+        .Form-sec label{
+            font-size: 30px;
+            font-weight: bolder;
+        }
+        .Form-sec input{
+            font-size: larger;
+            padding: 12px 90px;
+            background-color: rgb(247, 239, 239);
+            font-weight: lighter;
+            border: none;
+            border-radius: 20px;
+
+        }
+        .Form-sec textarea {
+           color: black;
+            font-weight: bold;
+            border-radius: 20px;
+            background-color: rgb(251, 251, 246);
+        }
+        .Login-Form button{
+            padding: 10px 60px;
+            font-size: 20px;
+            border-radius: 20px;
+            background-color: black;
+            color: azure;
+        }
+        .Login-Form button:hover{
+            background-color: orangered;
+            border: none;
+            box-shadow: 2px 3px 4px white;
+        }
+        /* ************************** */
+        .copy-right{
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            color: aliceblue;
+            font-size: 10px;
+            padding: 50px 300px;
+        }
+
+
+    </style>
+<!-- ********************************************************* -->
+<!-- ********************************************************* -->
+</head>
+<body>
+
+    <main>
+        <nav>
+        <div class="Navbar1">
+
+            <div class="section1">
+                <h2><i class="fa-solid fa-envelope"></i>info@Company.com</h2>
+            </div>
+
+            <div class="section2">
+            <h2>Sunny lsles Beach,FL 33160</h2>
+            </div>
+
+            <div class="section3">
+            <ul>
+                <li><i class="fab fa-facebook"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-whatsapp"></i></li>
+                <li><i class="fab fa-linkedin"></i></li>
+            </ul>
+        </div>
+    </div>
+    <!-- ************************************************* -->
+    <hr>
+<!-- ******************************************** -->
+    <div class="Navbar2">
+        <div class="section-01">
+            <h1>VILLA</h1>
+        </div>
+        <div class="section-02">
+            <ul>
+                <li><a href="#"><span style="color: rgb(176, 18, 4);">Home</span></a></li>
+                <li><a href="#">Properties</a></li>
+                <li><a href="#">Property Details</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+
+        </div>
+        <div class="section-03">
+            <button>Schedule a Visit </button>
+        </div>
+        
+    </div>
+    </nav>
+
+    <!-- <hr> -->
+    <!-- ****************************************************** -->
+
+    <div class="Image">
+        <div class="Title">
+            <button>Toronto,<span style="color: orangered;">Canada</span></button>
+            <br>
+            <br>
+            <h1>HURRY! <br>GET THE BEST <br>VILLA FOR <br> YOU</h1>
+        </div>
+    </div>
+    <hr>
+<!-- ******************************************************** -->
+ <!-- ************************************************* -->
+  <div class="sec-3">
+
+    <div class="box1">
+        <img src="/villa-Agency-Template_Project/Media/Table.jpg" alt="">
+       
+
+    </div>
+    <div class="box2">
+        <div class="box-2-01">
+            <h3><span style="color: orangered;">I FEATURED</span></h3>
+            <br>
+            
+            <h1>BEST APPARTMENT <br> & SEA VIEW</h1>
+        </div>
+
+
+        <div class="box-2-02">
+            <h4>Best Useful Link ?</h4>
+            <hr>
+            <!-- <p>Get The Best Villa Website Template In Html Css and Bootstrap for your business. TemplateMo provides you the best free CSS templates in the world. Please tell your friends about it.</p> -->
+             <h4>How Does This Work ?</h4>
+             <!-- <p>Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+              <hr>
+              <h4>Why is Villa Agency the Best</h4>
+              <p>Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+    </div>
+    <!-- ******************************** -->
+
+    <div class="box3">
+        <div class="box3-01">
+            <div class="img">
+                <img src="/villa-Agency-Template_Project/Media/info-icon-01.png" alt="">
+            </div>
+            <div class="value">
+                <h1><span style="color: black;">250 m2 </span><p style="font-weight: normal; font-size: small;"><span style="color: darkblue;">Total Flat Space</span></p></h1>
+                
+           
+            </div>
+        </div>
+        <hr>
+        <div class="box3-02">
+            <div class="img">
+                <img src="/villa-Agency-Template_Project/Media/info-icon-02.png" alt="">
+            </div>
+            <div class="value">
+                <h1><span style="color: black;">Contract</span><p style="color: darkblue;font-size: small; ">Contract Rady</p></h1>
+            
+            </div>
+        </div>
+        <hr>
+        <div class="box3-03">
+            <div class="img">
+                <img src="/villa-Agency-Template_Project/Media/info-icon-03.png" alt="">
+            </div>
+            <div class="value">
+                <h1> <span style="color: black;">Payment</span> <p style="color: darkblue;font-size: small;">Payment Process</p></h1>
+            </div>
+        </div>
+        <hr>
+        <div class="box3-04">
+            <div class="img">
+                <img src="/villa-Agency-Template_Project/Media/info-icon-04.png" alt="">
+            </div>
+            <div class="value">
+                <h2><span style="color: black;">Safty </span> <br> <p style="font-size: small; font-weight: normal;"><span style="color: darkblue;">14/7 Under Control</span></p></h2>
+                
+            </div>
+        </div>
+    </div>
+
+  </div>
+  <hr>
+<!-- *********************************************************** -->
+<!-- *********************************************************** -->
+    
+    <div class="Sec-4">
+        <div class="img-1">
+            <div class="First">
+                <h4>| VIDEO VIEW</h4>
+                <h1>Get Closer View & <br> Different Feeling</h1>
+            </div>
+            <div class="Second"></div>
+        </div>
+    </div>
+    <!-- <hr> -->
+    <!-- ************************************************************** -->
+    <!-- ************************************************************** -->
+    <div class="Sec-5">
+        <div class="box-Sec-5_1">
+            <h1><span style="color: orangered;">34</span><p> Buildings <br>
+                Finished Now</p></h1>
+        </div>
+        <div class="box-Sec-5_2">
+            <h1><span style="color: orangered;">12</span> <p>Years
+                Experience</p></h1>
+        </div>
+        <div class="box-Sec-5_3">
+            <h1><span style="color: orangered;">24</span> <p> Awwards
+                Won 2023</p></h1>
+        </div>
+    </div>
+   <!-- <hr> -->
+   <!-- *********************************************************** -->
+   <!-- *********************************************** -->
+
+    <div class="Sec-6">
+        <div class="First-Box">
+            <div class="First-Box-01">
+                <h4 ><span style="color: orangered;">| BEST DEAL</span></h4>
+                <br>
+                <h1>Find Your Best Deal <br> Right Now!
+                </h1>
+            </div>
+            <div class="First-Box-02">
+                <div class="Nav">
+                    <div class="BTN-1">
+                        <button style="padding: 18px 60px; background-color: black;font-size: medium; color: white; border-radius: 20px;font-weight: bold; box-shadow: 3px 2px 4px white;">Appartment</button>
+                    </div>
+                    <div class="BTN-2">
+                        <button style="padding: 18px 60px; background-color: black;font-size: medium; color: white; border-radius: 20px;font-weight: bold; box-shadow: 3px 2px 4px white;">Villa House</button>
+                    </div>
+                    <div class="BTN-3">
+                        <button style="padding: 18px 60px; background-color: black;font-size: medium; color: white; border-radius: 20px; box-shadow: 3px 2px 4px white;"><h3>Penthouse</h3></button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- ******************************************************* -->
+        <div class="Second-Box">
+            <div class="Second-Box-1">
+                <div class="nav1">
+                    <div>
+                        <h5 style="margin-left: 10px; margin-top: 40px; font-size: 20px;">Total Flat Space</h5>
+                    </div>
+                    <div><h1 style="margin-top: 30px; margin-left: 60px;">185m2</h1></div>
+                </div>
+
+                <hr>
+
+                <div class="nav2">
+                    <div>
+                        <h5 style="margin-left: 10px; margin-top: 40px; font-size: 20px;">Floor number</h5>
+                    </div>
+                    <div><h1 style="margin-top: 30px; margin-left: 75px;">26th</h1></div>
+                </div>
+                <hr>
+
+                <div class="nav3">
+                    <div>
+                        <h5 style="margin-left: 10px; margin-top: 40px; font-size: 20px;">Number of rooms</h5>
+                    </div>
+                    <div><h1 style="margin-top: 30px; margin-left: 60px;">4</h1></div>
+                </div>
+
+                <hr>
+
+                <div class="nav4">
+                    <div>
+                        <h5 style="margin-left: 10px; margin-top: 40px; font-size: 20px;">Parking Available</h5>
+                    </div>
+                    <div><h1 style="margin-top: 30px; margin-left: 60px;">Yes</h1></div>
+                </div>
+
+                <hr>
+
+                <div class="nav5">
+                    <div>
+                        <h5 style="margin-left: 10px; margin-top: 40px; font-size: 20px;">Payment Process</h5>
+                    </div>
+                    <div><h1 style="margin-top: 30px; margin-left: 60px;">Bank</h1></div>
+                </div>
+            </div>
+            <div class="Second-Box-2"></div>
+            <div class="Second-Box-3">
+                <h3 style="margin-top: 30px;">Extra Info About Property</h3>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, do eiusmod tempor pack incididunt ut labore et dolore magna aliqua quised ipsum suspendisse.
+                    <br>
+                    <br>
+                    
+
+                    When you need free CSS templates, you can simply type TemplateMo in any search engine website. In addition, you can type TemplateMo Portfolio, TemplateMo One Page Layouts, etc.</p>
+                    <br>
+
+                    <button>Schedule a Visit </button>
+            </div>
+        
+        </div>
+        
+    </div>
+   
+    <!-- *************************************************************** -->
+    <!-- *************************************************************** -->
+    <!-- *************************************************************** -->
+     <div class="Sec-7">
+        <div class="Content-1">
+            <h4>| PROPERTIES</h4>
+            <h1>We Provide The Best <br> Property You Like</h1>
+        </div>
+
+        <!-- ***************************************** -->
+
+        <div class="Content-2">
+            <div class="Image-1">
+                <div class="img-sec1"></div>
+                <div class="img-sec2">
+                    <div class="img-sec2-Nav">
+                        <div class="Nav-Button">
+                            <button style="background-color: azure; padding: 10px 40px;margin-top: 15px; margin-left: 10px; font-size: 15px; font-weight: bold;">Luxury Villa</button>
+                        </div>
+                        <div class="Value-1">
+                            <h1 style="font-size: 30px; margin-top: 20px; margin-left: 10px;color: rgb(235, 69, 13);">$2.264.000</h1>
+                        </div>
+                    </div>
+                    <h2 style="margin-top: 20px; margin-left: 40px;">18 New Street Miami, OR 97219</h2>
+                    <br>
+                    <br>
+                    <p style="margin-left: 40px; font-size: larger; word-spacing: 10px;">Bedrooms: <span style="font-weight: bold;">8</span> Bedrooms: <span style="font-weight: bold;">8</span>  </p>
+                    <br>
+                    <p style="margin-left: 40px; margin-left: 40px; font-size: larger; word-spacing: 8px;">Area: <span style="font-weight: bold;">545m2 </span> Floor: <span style="font-weight: bold;">3 </span> Parking: <span style="font-weight: bold;">6 Spots</span></p>
+                    <br>
+                    <hr>
+                    
+                    <button style="background-color: black; color: orangered; padding: 10px 50px; border-radius: 20px; font-size: 15px; margin-left: 100px; margin-top: 20px; font-weight: bold;">Schedule a Visit </button>
+                </div>
+            </div>
+            <!-- ************************************ -->
+
+
+            <div class="Image-2">
+                <div class="Image-2-sec1"></div>
+                <div class="Image-2-sec2">
+                    <div class="Image-2-sec2-Nav">
+                        <div class="Image-2-Button">
+                            <button style="background-color: azure; padding: 10px 40px;margin-top: 15px; margin-left: 10px; font-size: 15px; font-weight: bold;">Luxury Villa</button>
+                        </div>
+                        <div class="Image-2-Value-1">
+                            <h1 style="font-size: 30px; margin-top: 20px; margin-left: 10px;color: rgb(235, 69, 13);">$1.180.000</h1>
+                        </div>
+                    </div>
+                    <h2 style="margin-top: 20px; margin-left: 40px;">54 Mid Street Florida, OR 27001</h2>
+                    <br>
+                    <br>
+                    <p style="margin-left: 40px; font-size: larger; word-spacing: 10px;">Bedrooms: <span style="font-weight: bold;">6</span> Bedrooms: <span style="font-weight: bold;">5</span>  </p>
+                    <br>
+                    <p style="margin-left: 40px; margin-left: 40px; font-size: larger; word-spacing: 8px;">Area: <span style="font-weight: bold;"> 450m2 </span> Floor: <span style="font-weight: bold;">3 </span> Parking: <span style="font-weight: bold;">8 Spots</span></p>
+                    <br>
+                    <hr>
+                    
+                    <button style="background-color: black; color: orangered; padding: 10px 50px; border-radius: 20px; font-size: 15px; margin-left: 100px; margin-top: 20px; font-weight: bold;">Schedule a Visit </button>
+                </div>
+            </div>
+            <!-- ************************************************ -->
+
+            <div class="Image-3">
+                <div class="Image3-Sec1"></div>
+                <div class="Image3-Sec2">
+                    <div class="Image-3-sec2-Nav">
+                        <div class="Image-3-Button">
+                            <button style="background-color: azure; padding: 10px 40px;margin-top: 15px; margin-left: 10px; font-size: 15px; font-weight: bold;">Luxury Villa</button>
+                        </div>
+                        <div class="Image-3-Value-1">
+                            <h1 style="font-size: 30px; margin-top: 20px; margin-left: 10px; color: rgb(235, 69, 13);">$1.460.000</h1>
+                        </div>
+                    </div>
+                    <h2 style="margin-top: 20px; margin-left: 40px;">26 Old Street Miami, OR 38540</h2>
+                    <br>
+                    <br>
+                    <p style="margin-left: 40px; font-size: larger; word-spacing: 10px;">Bedrooms: <span style="font-weight: bold;">5</span> Bedrooms: <span style="font-weight: bold;">4</span>  </p>
+                    <br>
+                    <p style="margin-left: 40px; margin-left: 40px; font-size: larger; word-spacing: 8px;">Area: <span style="font-weight: bold;">225m2 </span> Floor: <span style="font-weight: bold;">3 </span> Parking: <span style="font-weight: bold;">10 Spots</span></p>
+                    <br>
+                    <hr>
+                    
+                    <button style="background-color: black; color: orangered; padding: 10px 50px; border-radius: 20px; font-size: 15px; margin-left: 100px; margin-top: 20px; font-weight: bold;">Schedule a Visit </button>
+            
+                </div>
+            </div>
+        </div>
+        
+
+<!-- ************************************************************************* -->
+        <!-- ************************************************************ -->
+         <!-- *********************************************************** -->
+        <div class="Content-3">
+            <div class="Content-3-Img1">
+
+
+                <div class="Content-3-img-sec1"></div>
+                <div class="img-sec2">
+                    <div class="img-sec2-Nav">
+                        <div class="Nav-Button">
+                            <button style="background-color: azure; padding: 10px 40px;margin-top: 15px; margin-left: 10px; font-size: 15px; font-weight: bold;">Apartment</button>
+                        </div>
+                        <div class="Value-1">
+                            <h1 style="font-size: 30px; margin-top: 20px; margin-left: 10px;color: rgb(235, 69, 13);">$584.500
+                            </h1>
+                        </div>
+                    </div>
+                    <h2 style="margin-top: 20px; margin-left: 40px;">12 New Street Miami, OR 12650</h2>
+                    <br>
+                    <br>
+                    <p style="margin-left: 40px; font-size: larger; word-spacing: 10px;">Bedrooms: <span style="font-weight: bold;">4</span> Bedrooms: <span style="font-weight: bold;">3</span>  </p>
+                    <br>
+                    <p style="margin-left: 40px; margin-left: 40px; font-size: larger; word-spacing: 8px;">Area: <span style="font-weight: bold;">125m2 </span> Floor: <span style="font-weight: bold;">25th </span> Parking: <span style="font-weight: bold;">2 Cars</span></p>
+                    <br>
+                    <hr>
+                    
+                    <button style="background-color: black; color: orangered; padding: 10px 50px; border-radius: 20px; font-size: 15px; margin-left: 100px; margin-top: 20px; font-weight: bold;">Schedule a Visit </button>
+                </div>
+            </div>
+            
+            <!-- ************************************** -->
+            <div class="Content-3-Img2">
+
+
+                <div class="Content-3-Image-2-sec1"></div>
+                <div class="Image-2-sec2">
+                    <div class="Image-2-sec2-Nav">
+                        <div class="Image-2-Button">
+                            <button style="background-color: azure; padding: 10px 40px;margin-top: 15px; margin-left: 10px; font-size: 15px; font-weight: bold;">Penthouse</button>
+                        </div>
+                        <div class="Image-2-Value-1">
+                            <h1 style="font-size: 30px; margin-top: 20px; margin-left: 10px;color: rgb(235, 69, 13);">$925.600</h1>
+                        </div>
+                    </div>
+                    <h2 style="margin-top: 20px; margin-left: 40px;">34 Beach Street Miami, OR 42680</h2>
+                    <br>
+                    <br>
+                    <p style="margin-left: 40px; font-size: larger; word-spacing: 10px;">Bedrooms: <span style="font-weight: bold;">4</span> Bedrooms: <span style="font-weight: bold;">4</span>  </p>
+                    <br>
+                    <p style="margin-left: 40px; margin-left: 40px; font-size: larger; word-spacing: 8px;">Area: <span style="font-weight: bold;">185m2 </span> Floor: <span style="font-weight: bold;">38th </span> Parking: <span style="font-weight: bold;">2 Cars</span></p>
+                    <br>
+                    <hr>
+                    
+                    <button style="background-color: black; color: orangered; padding: 10px 50px; border-radius: 20px; font-size: 15px; margin-left: 100px; margin-top: 20px; font-weight: bold;">Schedule a Visit </button>
+                </div>
+            </div>
+         <!-- *************************************** -->
+            <div class="Content-3-Img3">
+
+
+                <div class="Content-3-Image3-Sec1"></div>
+                <div class="Image3-Sec2">
+                    <div class="Image-3-sec2-Nav">
+                        <div class="Image-3-Button">
+                            <button style="background-color: azure; padding: 10px 40px;margin-top: 15px; margin-left: 10px; font-size: 15px; font-weight: bold;">Modern Condo</button>
+                        </div>
+                        <div class="Image-3-Value-1">
+                            <h1 style="font-size: 30px; margin-top: 20px; margin-left: 10px;color: rgb(235, 69, 13);">$450.000</h1>
+                        </div>
+                    </div>
+                    <h2 style="margin-top: 20px; margin-left: 40px;">22 New Street Portland, OR 16540</h2>
+                    <br>
+                    <br>
+                    <p style="margin-left: 40px; font-size: larger; word-spacing: 10px;">Bedrooms: <span style="font-weight: bold;">3</span> Bedrooms: <span style="font-weight: bold;">2</span>  </p>
+                    <br>
+                    <p style="margin-left: 40px; margin-left: 40px; font-size: larger; word-spacing: 8px;">Area: <span style="font-weight: bold;">165m2 </span> Floor: <span style="font-weight: bold;">26th </span> Parking: <span style="font-weight: bold;">3 Cars</span></p>
+                    <br>
+                    <hr>
+                    
+                    <button style="background-color: black; color: orangered; padding: 10px 50px; border-radius: 20px; font-size: 15px; margin-left: 100px; margin-top: 20px; font-weight: bold;">Schedule a Visit </button>
+            
+                </div> 
+            </div>
+            
+        </div>
+     </div>
+     
+     <!-- ***************************************************** -->
+     <!-- ***************************************************** -->
+     <!-- ***************************************************** -->
+     <!-- ***************************************************** -->
+
+        <div class="Sec-8">
+            <div class="Sec-8-Image">
+                <div class="nav-section">
+                    <h1 style="font-size: 20px; color: orangered; font-weight: bold;">| CONTACT US</h1>
+                    <h1 style="margin-top: 30px;color: azure;text-shadow: 2px 3px 4px black; font-size: 50px; line-height: 1.6;">Get In Touch With <br> Our Agents</h1> 
+                        
+                </div>
+                <div class="Image-Sec">
+                    <div class="Map-sec">
+                        <div class="Map-sec-Img">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.851988351565!2d73.91089547473563!3d18.5355895687161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c19ada453107%3A0x3d68320f038a8e0d!2sGoogle%20Pune!5e0!3m2!1sen!2sin!4v1701339368514!5m2!1sen!2sin" width="100%" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="Map-sec-Button">
+                            <div class="Btn-1">
+                                
+                                <div class="Btn-1-img">
+                                    <img src="/villa-Agency-Template_Project/Media/phone-icon.png" alt="" style="height: 60px;">
+                                </div>
+                                <div class="Btn-1-Value">
+                                    <h2 style="font-size: medium; margin-top: 30px; line-height: 1.4;"><span style="font-weight: bold; color: black; font-size: 30px;">010-020-0340</span>
+                                        Phone Number</h2>
+                                </div>
+                            </div>
+
+
+                            <div class="Btn-2">
+                                <div class="Btn-2-img">
+                                    <img src="/villa-Agency-Template_Project/Media/email-icon.png" alt="" style="height: 60px;">
+                                </div>
+                                <div class="Btn-1-Value">
+                                    <h2 style="font-size: medium; margin-top: 30px; line-height: 1.4;"><span style="font-weight: bold; color: black; font-size: 30px;">info@villa.co</span>
+                                        Business Email</h2>
+                                </div>
+                            </div>
+                        </div>
+                           
+                        
+                    </div>
+                    <div class="Form-sec">
+                        <div class="Login-Form">
+                        <legend>
+                            <label for="">Full name</label>
+                            <br>
+                            <input type="text" id="" placeholder="Your Name...">
+
+                            <br><br>
+                            <label for="">Email Address</label>
+                            <br>
+                            <input type="text" id="" placeholder="Your E-mail...">
+                            <br><br>
+                            <label for="">Subject</label>
+                            <br>
+                            <input type="text" id="" placeholder="Subject...">
+                            <br><br>    
+                            <label for="">Message</label>
+                            <br>
+                            <textarea name="text" id="" cols="50" rows="8" placeholder="Your Message.."></textarea>
+                          
+                            <br><br>
+                            <button>Send Message</button>
+                        </legend>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ****************************************** -->
+         <footer>
+            <div class="copy-right">
+                <h1>Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design: TemplateMo</h1>
+            </div>
+         </footer>
+
+    </main>
+</body>
+</html>
